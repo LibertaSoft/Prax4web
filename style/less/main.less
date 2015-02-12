@@ -3,6 +3,7 @@ body{
 	background-color: @frameBg;
 	wdith: 100%;
 	height: 100%;
+	font-family: Helvetica, Tahoma, Sans;
 }
 
 .middle{
@@ -14,9 +15,27 @@ body{
 @frameBg: #F2F2F2;
 @frameBg2: #EEEEEE;
 
+@colorH1: #00ADEE;
+@colorH2: #47474A;
+
+@H1FontSize: 32px;
+@H2FontSize: @H1FontSize - 11;
+
 .frames{
 	wdith: 100%;
 	height: 100%;
+
+	section.middle{
+		h1{
+			font-size: @H1FontSize;
+			color: @colorH1;
+		}
+		h2{
+			font-size: @H1FontSize - 11;
+			color: @colorH2;
+			text-shadow: @H2FontSize @H2FontSize 0px rgba(0,0,0,0.05);
+		}
+	}
 }
 
 .section{
