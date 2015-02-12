@@ -31,36 +31,47 @@ body{
 
 /*-------------------- [ЗАГОЛОВОК КОНТАКТНЫЕ ДАННЫЕ]---------------------*/
 
-@font-halvetica-normal: "halvetica-normal, Tahoma";
+@font-halvetica-normal: "helvetica-normal, Arial";
 @font-numder-size: 30px;
 @contact-menu-item-color: #919191;
-@face-color: 00adee;
+@face-color: #00adee;
 
-header span{
-	font-family: @font-halvetica-normal;
-	font-size: @font-numder-size;
-}
+header{ 
+	span{
+		font-family: Tahoma;
+		font-size: @font-numder-size;
+	}
 
-header nav{
-	height: 59px;
-	width: 300px;
-	float: right;
-}
-
-header nav li{
-	font-size: 15px;
-	font-family: @font-halvetica-normal;
-	color: @contact-menu-item-color;
-	border-right: 1px solid @contact-menu-item-color;
+	nav{
+		@height: 59px;
+		height: @height;
+		float: right;	
+		vertical-align: middle;
 	
-}
-
-header nav li:hover{
-	color: @face-color;
-} 
-
-header nav li:last-child{
-	border-right: none;
+		ul{
+			
+			margin-top: 0;
+			height:@height;
+			vertical-align: center;
+			
+			li{
+				@font-size: 15px;
+				display: inline;
+				font-size: @font-size;
+				font-family: @font-halvetica-normal;
+				color: @contact-menu-item-color;
+				border-right: 1px solid @contact-menu-item-color;	
+				line-height: @height/2+ @font-size/2;
+				padding-right: @font-size/2;
+			}
+			 li:hover{
+				color: @face-color;
+			} 
+			li:last-child{
+				border-right: none;
+			}
+		}
+	}
 }
 /*-------------------- [/ЗАГОЛОВОК КОНТАКТНЫЕ ДАННЫЕ]---------------------*/
 
