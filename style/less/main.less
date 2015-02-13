@@ -97,10 +97,6 @@ a:hover{
 	.learningMore{
 		text-align: center;
 		margin-top: 80px;
-
-		a{
-
-		}
 	}
 }
 .section:nth-child(even){
@@ -178,7 +174,7 @@ header{
 	background: @face-color;
 	
 		ul{
-			width:100%
+			width:100%;
 			
 			li{
 				display: inline;
@@ -188,7 +184,40 @@ header{
 	}
 /*----------------- [/main menu] ------------------ */
 
+footer{
+	height: 60%;
+	background-color: #555;
+}
 
+.footer-column{
+	color: #e6e6e6;
+	float: left;
+	margin: 50px;
+
+	a{
+		color: #fefefe;
+	}
+	a:hover{
+		color: @face-color;
+	}
+
+	li{
+		list-style: none;
+		margin-top: 15px;
+	}
+	.circle-gray{
+		@size: 24px;
+		@border-size: 6px;
+		@border-color: #444;
+
+		text-align: center;
+		padding: @border-size;
+		width: @size - @border-size; height: @size - @border-size;
+		border: @border-size solid @border-color;
+		border-radius: 50%;
+		font-size: @size - @border-size;
+	}
+}
 
 
 
