@@ -1,4 +1,5 @@
 @face-color: #00adee;
+@back-color: #47474A;
 
 body{
 	margin: 0;
@@ -8,11 +9,11 @@ body{
 	font-family: Helvetica, Tahoma, Sans;
 }
 a{
-	color: @face-color;
+	color: @back-color;
 	text-decoration: none;
 }
 a:hover{
-	color: @face-color - #666666;
+	color: @face-color;
 }
 
 .middle{
@@ -27,7 +28,7 @@ a:hover{
 @frameBg2: #EEEEEE;
 
 @colorH1: @face-color;
-@colorH2: #47474A;
+@colorH2: @back-color;
 
 @H1FontSize: 32px;
 @H2FontSize: @H1FontSize - 11;
