@@ -106,13 +106,17 @@ a:hover{
 .section:nth-child(even){
 	background-color: @frameBg2;
 }
+
+
 /* ------------------- [/ФРЕЙМЫ] ------------------- */
+
 
 /*-------------------- [ЗАГОЛОВОК КОНТАКТНЫЕ ДАННЫЕ]---------------------*/
 
 @font-halvetica-normal: "helvetica-normal, Arial";
 @font-numder-size: 30px;
 @contact-menu-item-color: #919191;
+@height: 59px;
 
 header{
 	position: absolute;
@@ -128,7 +132,7 @@ header{
 	}
 
 	nav{
-		@height: 59px;
+		
 		height: @height;
 		float: right;	
 		vertical-align: middle;
@@ -144,14 +148,19 @@ header{
 				display: inline;
 				font-size: @font-size;
 				font-family: @font-halvetica-normal;
-				color: @contact-menu-item-color;
 				border-right: 1px solid @contact-menu-item-color;	
 				line-height: @height/2+ @font-size/2;
 				padding-right: @font-size/2;
-			}
-			li:hover{
+				
+				a{
+					text-decoration:none;				
+					color: @contact-menu-item-color;
+				}
+				a:hover{
 				color: @face-color;
-			} 
+				}
+			}
+						 
 			li:last-child{
 				border-right: none;
 			}
@@ -160,7 +169,24 @@ header{
 }
 /*-------------------- [/ЗАГОЛОВОК КОНТАКТНЫЕ ДАННЫЕ]---------------------*/
 
-
+/*----------------- [main menu] ------------------- */
+.mainMenu{
+	
+		
+	height:@height;
+	width:100%;
+	background: @face-color;
+	
+		ul{
+			width:100%
+			
+			li{
+				display: inline;
+				list-style:none;
+			}		
+		}
+	}
+/*----------------- [/main menu] ------------------ */
 
 
 
