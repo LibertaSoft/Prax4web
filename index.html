@@ -29,9 +29,24 @@
 				navigationTooltips: ['photoalbum', 'design', 'snapshot', 'matherial', 'cost', 'location', 'footer'],
 				verticalCentered: true,
 			});
+			
 		});
 		
-		alert(navigator.userAgent);
+		user = navigator.userAgent
+		if(user.match("Chorome"))
+		{
+			alert("chrome");	
+		}
+		else if(user.match("Firefox"))
+		{
+			alert("ff");	
+		}
+		else
+		{
+			console.log(navigator.userAgent);	
+		}
+		console.log(navigator.userAgent);
+		//$(document).ready(function() {
 	</script>
 
 </head>
