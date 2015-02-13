@@ -61,9 +61,26 @@ a:hover{
 	.block{
 		display: inline-block;
 		margin: 0 50px;
+		max-width: 200px;
+		text-align: center;
 
+		.cost{
+			span{
+				color: @face-color;
+				font-size: 20px;
+			}
+		}
 		.round{
 			border-radius: 50%;
+			margin: 0 auto;
+			padding: 6px;
+			width: 65px;
+			height: 65px;
+			font-size: 38pt;
+			text-align: center;
+			vertical-align: middle;
+			border: 1px solid @face-color;
+			color: @face-color;
 		}
 		.description{
 
