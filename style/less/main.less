@@ -27,9 +27,6 @@ a:hover{
 @frameBg: #FFFFFF;
 @frameBg2: #EEEEEE;
 
-@colorH1: @face-color;
-@colorH2: @back-color;
-
 @H1FontSize: 32px;
 @H2FontSize: @H1FontSize - 11;
 
@@ -44,11 +41,11 @@ a:hover{
 		h1{
 			margin-top: 60px;
 			font-size: @H1FontSize;
-			color: @colorH1;
+			color: @face-color;
 		}
 		h2{
 			font-size: @H1FontSize - 11;
-			color: @colorH2;
+			color: @back-color;
 			text-shadow: @H2FontSize @H2FontSize 0px rgba(0,0,0,0.05);
 		}
 	}
