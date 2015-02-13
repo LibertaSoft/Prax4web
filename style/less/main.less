@@ -27,9 +27,6 @@ a:hover{
 @frameBg: #FFFFFF;
 @frameBg2: #EEEEEE;
 
-@colorH1: @face-color;
-@colorH2: @back-color;
-
 @H1FontSize: 32px;
 @H2FontSize: @H1FontSize - 11;
 
@@ -44,11 +41,11 @@ a:hover{
 		h1{
 			margin-top: 60px;
 			font-size: @H1FontSize;
-			color: @colorH1;
+			color: @face-color;
 		}
 		h2{
 			font-size: @H1FontSize - 11;
-			color: @colorH2;
+			color: @back-color;
 			text-shadow: @H2FontSize @H2FontSize 0px rgba(0,0,0,0.05);
 		}
 	}
@@ -74,15 +71,20 @@ a:hover{
 			}
 		}
 		.round{
+			@size: 64px;
+			@font-size: 38pt;
+
+
 			border-radius: 50%;
 			margin: 0 auto;
-			padding: 7px;
-			width: 64px;
-			height: 64px;
-			font-size: 38pt;
+			padding: @font-size / 2;
+			width: @size;
+			height: @size;
+			font-size: @font-size;
+
 			text-align: center;
 			vertical-align: middle;
-			border: 1px solid @face-color;
+			border: 2px solid @face-color;
 			color: @face-color;
 		}
 		.description{
@@ -100,10 +102,6 @@ a:hover{
 	.learningMore{
 		text-align: center;
 		margin-top: 80px;
-
-		a{
-
-		}
 	}
 }
 .section:nth-child(even){
@@ -218,6 +216,7 @@ header{
 		ul{
 			display: inline-block;
 			float:right;
+			width:100%;
 			
 			margin: 0 20% 0 0;
 			padding:0;
@@ -286,7 +285,40 @@ header{
 }	
 /*----------------- [/main menu] ------------------ */
 
+footer{
+	height: 40%;
+	background-color: #555;
+}
 
+.footer-column{
+	color: #e6e6e6;
+	float: left;
+	margin: 40px;
+
+	a{
+		color: #fefefe;
+	}
+	a:hover{
+		color: @face-color;
+	}
+
+	li{
+		list-style: none;
+		margin-top: 15px;
+	}
+	.circle-gray{
+		@size: 18px;
+		@border-size: 6px;
+		@border-color: #444;
+
+		text-align: center;
+		padding: @size - @border-size;
+		width: @size - @border-size; height: @size - @border-size;
+		border: @border-size solid @border-color;
+		border-radius: 50%;
+		font-size: @size - @border-size;
+	}
+}
 
 
 
