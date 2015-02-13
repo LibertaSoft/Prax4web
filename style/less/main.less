@@ -1,4 +1,5 @@
 @face-color: #00adee;
+@back-color: #47474A;
 
 body{
 	margin: 0;
@@ -8,10 +9,11 @@ body{
 	font-family: Helvetica, Tahoma, Sans;
 }
 a{
-	color: @face-color;
+	color: @back-color;
+	text-decoration: none;
 }
 a:hover{
-	color: @face-color - #666666;
+	color: @face-color;
 }
 
 .middle{
@@ -26,7 +28,7 @@ a:hover{
 @frameBg2: #EEEEEE;
 
 @colorH1: @face-color;
-@colorH2: #47474A;
+@colorH2: @back-color;
 
 @H1FontSize: 32px;
 @H2FontSize: @H1FontSize - 11;
@@ -40,6 +42,7 @@ a:hover{
 			text-align: center;
 		}
 		h1{
+			margin-top: 60px;
 			font-size: @H1FontSize;
 			color: @colorH1;
 		}
@@ -60,7 +63,7 @@ a:hover{
 
 	.block{
 		display: inline-block;
-		margin: 0 50px;
+		margin: 50px;
 		max-width: 200px;
 		text-align: center;
 
@@ -73,9 +76,9 @@ a:hover{
 		.round{
 			border-radius: 50%;
 			margin: 0 auto;
-			padding: 6px;
-			width: 65px;
-			height: 65px;
+			padding: 7px;
+			width: 64px;
+			height: 64px;
 			font-size: 38pt;
 			text-align: center;
 			vertical-align: middle;
@@ -93,6 +96,15 @@ a:hover{
 	width: 100%;
 	height: 800px;
 	background-color: @frameBg;
+
+	.learningMore{
+		text-align: center;
+		margin-top: 80px;
+
+		a{
+
+		}
+	}
 }
 .section:nth-child(even){
 	background-color: @frameBg2;
