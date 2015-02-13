@@ -26,6 +26,9 @@ body{
 	height: 100%;
 
 	section.middle{
+		h1, h2{
+			text-align: center;
+		}
 		h1{
 			font-size: @H1FontSize;
 			color: @colorH1;
@@ -55,7 +58,14 @@ body{
 @contact-menu-item-color: #919191;
 @face-color: #00adee;
 
-header{ 
+header{
+	position: absolute;
+	left: 0;
+	width: 100%;
+	top: 0;
+	height: 56px;
+	z-index: 9999;
+
 	span{
 		font-family: Tahoma;
 		font-size: @font-numder-size;
@@ -83,7 +93,7 @@ header{
 				line-height: @height/2+ @font-size/2;
 				padding-right: @font-size/2;
 			}
-			 li:hover{
+			li:hover{
 				color: @face-color;
 			} 
 			li:last-child{
