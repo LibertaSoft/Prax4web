@@ -175,7 +175,7 @@ header{
 	@height: 56px;
 	@popup-color: #2897d5;
 	
-	position: relative;
+	position: absolute;
 	height: @height;
 	width: 100%;
 	left: 0;
@@ -213,7 +213,7 @@ header{
 			}
 		}
 		
-		ul{
+		ul{/*menu*/
 			display: inline-block;
 			float:right;
 			
@@ -221,7 +221,7 @@ header{
 			padding:0;
 			height: @height;
 							
-			li{
+			li{/*menu item*/
 				display: inline-block;
 				height: @height;
 				list-style:none;
@@ -233,27 +233,30 @@ header{
 					height: @height;
 					line-height: @height;
 				}
-				ul{
+				ul{/* popup */
 					position:absolute;
 					top: @height;
-					left: -999px;
+					left: 35%;
+					opacity:0;
 					height: 3*@height;
+					width: @height * 3;
 					margin: 0;
-					
-					display:block;
+					z-index: 9999;
 					background-color: @popup-color;
 					
-					li{
+					float:left;
+					
+					li{/*popup item*/
 						display:block;
 						
-						a{
+						a{/*popup link*/
 							margin: 0 5px;	
 						}	
 					}		
 				}
 			}
 			
-			li:hover{
+			li:hover{/*menu item*/
 				background-image: -webkit-linear-gradient(180deg, @face-color 0%, @popup-color 100%);
 				background-image: -moz-linear-gradient(180deg, @face-color 0%, @popup-color 100%);
 				background-image: -o-linear-gradient(180deg, @face-color 0%, @popup-color 100%);
@@ -265,9 +268,8 @@ header{
 				color: #fff;
 				
 				ul, ul:hover{
-					position:relative;
-					left:-118px;
-					
+					position:absolute;
+					opacity:1;
 					li{
 						background-image: none;
 						background-color: @popup-color;	
