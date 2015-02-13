@@ -1,3 +1,5 @@
+@face-color: #00adee;
+
 body{
 	margin: 0;
 	background-color: @frameBg;
@@ -5,17 +7,25 @@ body{
 	height: 100%;
 	font-family: Helvetica, Tahoma, Sans;
 }
+a{
+	color: @face-color;
+}
+a:hover{
+	color: @face-color - #666666;
+}
 
 .middle{
 	width: 946px;
 	margin: 0 auto;
+
+	height: 100%;
 }
 
 /* ------------------- [ФРЕЙМЫ] ------------------- */
-@frameBg: #F2F2F2;
+@frameBg: #FFFFFF;
 @frameBg2: #EEEEEE;
 
-@colorH1: #00ADEE;
+@colorH1: @face-color;
 @colorH2: #47474A;
 
 @H1FontSize: 32px;
@@ -56,7 +66,6 @@ body{
 @font-halvetica-normal: "helvetica-normal, Arial";
 @font-numder-size: 30px;
 @contact-menu-item-color: #919191;
-@face-color: #00adee;
 
 header{
 	position: absolute;
