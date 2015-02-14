@@ -202,7 +202,7 @@ header{
 			border: 1px solid @face-color;
 			
 			text-align:center;
-			font-size:6px;
+			font-size:7px;
 			font-weight:600;
 			text-transform: uppercase;
 			
@@ -212,7 +212,7 @@ header{
 				margin:0;	
 			}
 			#album{
-				font-size:9px;
+				font-size:11px;
 				margin:0;
 			}
 		}
@@ -293,6 +293,7 @@ header{
 	}
 }	
 /*----------------- [/main menu] ------------------ */
+@footer-face-color: #c1c1c1;
 
 footer{
 	height: 40%;
@@ -305,7 +306,7 @@ footer{
 	margin: 40px;
 
 	a{
-		color: #fefefe;
+		color: @footer-face-color;
 	}
 	a:hover{
 		color: @face-color;
@@ -326,6 +327,24 @@ footer{
 		border: @border-size solid @border-color;
 		border-radius: 50%;
 		font-size: @size - @border-size;
+	}
+}
+#footer-logo{
+	
+	a{
+		display:block;
+		z-index:999;
+		height:129px;
+		width:76px;
+		
+		padding-top: 52%;
+		
+		#photo{
+			margin:0;	
+		}
+		#album{
+			margin:0;
+		}
 	}
 }
 
